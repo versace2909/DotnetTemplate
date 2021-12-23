@@ -21,35 +21,35 @@ public class BookServices : IBookServices
         _mapper = mapper;
     }
 
-    public async Task<ResponseBaseModel<BookDTO>> GetBookDetailAsync(long id)
+    public async Task<ResponseBaseModel<BookDTO<long>>> GetBookDetailAsync(long id)
     {
         var result = await _dbContext
             .Books
             .AsNoTracking()
-            .ProjectTo<BookDTO>(_mapper.ConfigurationProvider)
-            .FirstOrDefaultAsync(x => x.Id == id);
-        return ResponseBaseModel<BookDTO>.Succeed(result);
+            .ProjectTo<BookDTO<long>>(_mapper.ConfigurationProvider)
+            .FirstOrDefaultAsync(x => x.Id.Equals(id));
+        return ResponseBaseModel<BookDTO<long>>.Succeed(result);
     }
 
-    public async Task<ListResponseBaseModel<BookDTO>> GetAllBooksAsync()
+    public async Task<ListResponseBaseModel<BookDTO<long>>> GetAllBooksAsync()
     {
         var results = await _dbContext
             .Books
             .AsNoTracking()
-            .ProjectTo<BookDTO>(_mapper.ConfigurationProvider)
+            .ProjectTo<BookDTO<long>>(_mapper.ConfigurationProvider)
             .ToListAsync();
-        return ListResponseBaseModel<BookDTO>.Succeed(results);
+        return ListResponseBaseModel<BookDTO<long>>.Succeed(results);
     }
 
     public async Task<ResponseBaseModel<long>> InsertBookAsync(CreateBookDTO request)
     {
-        var newBook = _mapper.Map<Book>(request);
+        var newBook = _mapper.Map<Book<long>>(request);
         _dbContext.Books.Add(newBook);
         await _dbContext.SaveChangesAsync();
         return ResponseBaseModel<long>.Succeed(newBook.Id, Messages.InsertSuccessful);
     }
 
-    public async Task<ResponseBaseModel<bool>> UpdateBookById(BookDTO request)
+    public async Task<ResponseBaseModel<bool>> UpdateBookById(BookDTO<long> request)
     {
         var book = await _dbContext.Books.FirstOrDefaultAsync(x => x.Id == request.Id);
         book.Author = request.Author;

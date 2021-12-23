@@ -73,9 +73,9 @@ public class ResponseBaseModel<T> : BaseModel
 
 public class ListResponseBaseModel<T> : BaseModel
 {
-    public IList<T> Datas { get; set; }
+    public IEnumerable<T> Datas { get; set; }
 
-    public static ListResponseBaseModel<T> Succeed(IList<T> datas)
+    public static ListResponseBaseModel<T> Succeed(IEnumerable<T> datas)
     {
         return new ListResponseBaseModel<T>()
         {

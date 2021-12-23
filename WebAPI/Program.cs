@@ -1,5 +1,6 @@
 using FluentValidation.AspNetCore;
 using Infrastructure;
+using Infrastructure.EFCore;
 using Infrastructure.Validators;
 using Infrastructure.Validators.Books;
 
@@ -14,7 +15,8 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.RegisterInfrastructure(builder.Configuration);
+builder.Services.RegisterEfInfrastructure(builder.Configuration);
+// builder.Services.RegisterInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

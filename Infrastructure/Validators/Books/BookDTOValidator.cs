@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace Infrastructure.Validators.Books;
 
-public class BookDTOValidator :  AbstractValidator<BookDTO>
+public class BookDTOValidator :  AbstractValidator<BookDTO<long>>
 {
     public BookDTOValidator()
     {

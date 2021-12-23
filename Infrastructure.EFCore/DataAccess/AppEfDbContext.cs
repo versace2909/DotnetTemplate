@@ -1,27 +1,28 @@
 using Core.Base;
 using Core.Books;
+using Infrastructure.EFCore.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Data;
+namespace Infrastructure.EFCore.DataAccess;
 
-public class AppDbContext : DbContext
+public class AppEfDbContext<Tkey> : DbContext
 {
-    protected AppDbContext()
+    protected AppEfDbContext()
     {
     }
 
-    public AppDbContext(DbContextOptions options) : base(options)
+    public AppEfDbContext(DbContextOptions options) : base(options)
     {
     }
 
-    public DbSet<Book<long>> Books { get; set; }
+    public DbSet<Book<Tkey>> Books { get; set; }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
         var entries = ChangeTracker.Entries();
         foreach (var entry in entries)
         {
-            if (entry.Entity is BaseEntity<long> entity)
+            if (entry.Entity is BaseEntity<Tkey> entity)
             {
                 switch (entry.State)
                 {

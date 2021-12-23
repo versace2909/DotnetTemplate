@@ -1,7 +1,7 @@
 using Core.Books;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Data;
+namespace Infrastructure.EFCore.Data;
 
 public static class ConfigTable
 {

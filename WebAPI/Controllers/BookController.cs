@@ -14,8 +14,8 @@ public class BookController : Controller
         _bookServices = bookServices;
     }
 
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetBook([FromQuery] long id)
+    [HttpGet("{id:long}")]
+    public async Task<IActionResult> GetBook(long id)
     {
         var result = await _bookServices.GetBookDetailAsync(id);
         return new JsonResult(result);
@@ -36,7 +36,7 @@ public class BookController : Controller
     }
 
     [HttpPut("")]
-    public async Task<IActionResult> UpdateBook([FromBody] BookDTO request)
+    public async Task<IActionResult> UpdateBook([FromBody] BookDTO<long> request)
     {
         var result = await _bookServices.UpdateBookById(request);
         return new JsonResult(result);
