@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nXkpt2ovUmf69BtXRgEvEWMd+6UVo9Mv2Sq5zWEgEAAXZyZx5ptFXqCzz6calK8Rq7BVnp3W7hEMgSujyTqeMQ==",
+  "dgSpecHash": "OEfuHivirNDN6Ko+Qvmcq8MglrE9SatODZL9xLniiS37uHovWJBg6TMg3VR/pwx/O8Ortftyfzg9yZN7zGoM9g==",
   "success": true,
   "projectFilePath": "/Users/dung/RiderProjects/NetTemplate/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -9,12 +9,14 @@
     "/Users/dung/.nuget/packages/fluentvalidation/10.3.6/fluentvalidation.10.3.6.nupkg.sha512",
     "/Users/dung/.nuget/packages/fluentvalidation.aspnetcore/10.3.6/fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
     "/Users/dung/.nuget/packages/fluentvalidation.dependencyinjectionextensions/10.3.6/fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
+    "/Users/dung/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore/6.0.1/microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.1/microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.1/microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
+    "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.design/6.0.1/microsoft.entityframeworkcore.design.6.0.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.inmemory/6.0.1/microsoft.entityframeworkcore.inmemory.6.0.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.1/microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
     "/Users/dung/.nuget/packages/microsoft.entityframeworkcore.sqlserver/6.0.1/microsoft.entityframeworkcore.sqlserver.6.0.1.nupkg.sha512",

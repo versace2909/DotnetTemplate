@@ -21,8 +21,8 @@ public static class ConfigDependencies
         service.AddFluentValidation(cfg => { cfg.RegisterValidatorsFromAssemblyContaining<CreateBookDTOValidator>(); });
         service.AddDbContext<AppDbContext>(cfg =>
         {
-            // cfg.UseSqlServer(configuration.GetConnectionString("appConnectionString"));
-            cfg.UseInMemoryDatabase("temp");
+            cfg.UseSqlServer(configuration.GetConnectionString("appConnectionString"));
+            // cfg.UseInMemoryDatabase("temp");
         });
     }
 }

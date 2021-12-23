@@ -19,3 +19,5 @@
 /Users/dung/RiderProjects/NetTemplate/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb
 /Users/dung/RiderProjects/NetTemplate/Infrastructure/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Abstractions.dll
 /Users/dung/RiderProjects/NetTemplate/Infrastructure/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Core.dll
+/Users/dung/RiderProjects/NetTemplate/Infrastructure/bin/Debug/net6.0/Infrastructure.runtimeconfig.json
+/Users/dung/RiderProjects/NetTemplate/Infrastructure/obj/Debug/net6.0/Infrastructure.genruntimeconfig.cache

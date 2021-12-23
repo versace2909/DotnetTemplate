@@ -70,3 +70,5 @@
 /Users/dung/RiderProjects/NetTemplate/WebAPI/bin/Debug/net6.0/FluentValidation.dll
 /Users/dung/RiderProjects/NetTemplate/WebAPI/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
 /Users/dung/RiderProjects/NetTemplate/WebAPI/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/dung/RiderProjects/NetTemplate/WebAPI/bin/Debug/net6.0/Humanizer.dll
+/Users/dung/RiderProjects/NetTemplate/WebAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
