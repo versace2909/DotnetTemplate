@@ -1,0 +1,15 @@
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/Core.deps.json
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/Core.dll
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/ref/Core.dll
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/Core.pdb
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/Core.Shared.dll
+/Users/dung/RiderProjects/NetTemplate/Core/bin/Debug/net6.0/Core.Shared.pdb
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.csproj.AssemblyReference.cache
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.AssemblyInfoInputs.cache
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.AssemblyInfo.cs
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.csproj.CoreCompileInputs.cache
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.csproj.CopyComplete
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.dll
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/ref/Core.dll
+/Users/dung/RiderProjects/NetTemplate/Core/obj/Debug/net6.0/Core.pdb
