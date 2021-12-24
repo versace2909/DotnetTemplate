@@ -15,8 +15,7 @@ public class BaseUnitOfWork<TKey> : IUnitOfWork<TKey>
         _mapper = mapper;
     }
 
-    public IRepositoryBase<Book<TKey>, TKey> BookRepository =>
-        new RepositoryBase<Book<TKey>, TKey>(_dbContext, _mapper);
+    public IRepositoryBase<Book<TKey>, TKey> BookRepository => new RepositoryBase<Book<TKey>, TKey>(_dbContext);
 
     public async Task<bool> SaveAsync()
     {

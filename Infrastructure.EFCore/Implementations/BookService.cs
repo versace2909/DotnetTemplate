@@ -23,17 +23,20 @@ public class BookService : IBookServices
     {
         var result = await _context
             .BookRepository
-            .GetById<BookDTO<long>>(id);
-        return ResponseBaseModel<BookDTO<long>>.Succeed(result);
+            .GetById(id);
+
+        var bookDTOResult = _mapper.Map<BookDTO<long>>(result);
+        return ResponseBaseModel<BookDTO<long>>.Succeed(bookDTOResult);
     }
 
     public async Task<ListResponseBaseModel<BookDTO<long>>> GetAllBooksAsync()
     {
         var result = await _context
             .BookRepository
-            .GetAll<BookDTO<long>>();
-        
-        return ListResponseBaseModel<BookDTO<long>>.Succeed(result);
+            .GetAll();
+        var bookDTOResult = _mapper.Map<List<BookDTO<long>>>(result);
+
+        return ListResponseBaseModel<BookDTO<long>>.Succeed(bookDTOResult);
     }
 
     public async Task<ResponseBaseModel<long>> InsertBookAsync(CreateBookDTO request)
